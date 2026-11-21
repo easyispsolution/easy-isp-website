@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="bn" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ইজি আইএসপি সলিউশন — আপনার আইএসপি ব্যবসার স্মার্ট ডিজিটাল পার্টনার</title>
+  <meta name="description" content="সহজ, দ্রুত ও সম্পূর্ণ আইএসপি ম্যানেজমেন্ট সফটওয়্যার — দৈনিক হিসাব-নিকাশ, বিকাশ পেমেন্ট, মাইক্রোটিক Enable/Disable, অটো ও বাল্ক এসএমএস, স্মার্ট ওএলটি মনিটরিং ও রিসেলার ম্যানেজমেন্ট।" />
+  <meta property="og:title" content="Easy ISP Solution — স্মার্ট আইএসপি বিলিং, মাইক্রোটিক, বিকাশ, এসএমএস ও ওএলটি" />
+  <meta property="og:description" content="একটি সহজ সফটওয়্যারেই আপনার আইএসপি ব্যবসার সবগুলো মডিউল — স্ক্রিনশটসহ বিস্তারিত দেখুন।" />
+  <meta property="og:image" content="https://easyispsolution.com/assets/ui-dashboard-full.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="notranslate" translate="no">
+
+  <!-- ==================== SIMPLE NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <div class="brand-logo"><img src="assets/logo.png" alt="Easy ISP Solution" /></div>
+        <div class="brand-name" data-i18n-html="brandName">ইজি আইএসপি <span>সলিউশন</span></div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#modules" data-i18n="navModules">আমাদের মডিউলসমূহ</a>
+        <a href="#team" data-i18n="navTeam">ফাউন্ডার ও টিম</a>
+        <a href="#contact" data-i18n="navContact">যোগাযোগ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="bn" type="button" translate="no">বাংলা</button>
+          <button class="lang-btn" data-lang="en" type="button" translate="no">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-sm btn-primary" data-i18n="navDemo">ফ্রি ডেমো</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-head">
+      <div class="brand">
+        <div class="brand-logo"><img src="assets/logo.png" alt="Logo" /></div>
+        <div class="brand-name" data-i18n-html="brandName">ইজি আইএসপি <span>সলিউশন</span></div>
+      </div>
+      <button class="modal-close" id="mobileDrawerClose" type="button" aria-label="Close">&times;</button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="#modules" class="drawer-link" data-i18n="navModules">আমাদের মডিউলসমূহ</a>
+      <a href="#team" class="drawer-link" data-i18n="navTeam">ফাউন্ডার ও টিম</a>
+      <a href="#contact" class="drawer-link" data-i18n="navContact">যোগাযোগ</a>
+    </div>
+    <div style="margin-top:auto; display:flex; flex-direction:column; gap:12px;">
+      <a href="#contact" class="btn btn-primary drawer-link" data-i18n="heroDemo">📞 ফ্রি ডেমো নিন</a>
+    </div>
+  </div>
+
+  <!-- ==================== CLEAN BOLD HERO ==================== -->
+  <section class="hero" id="top">
+    <img src="assets/fiber-bg.jpg" alt="" class="hero-bg-img" />
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="dot-live"></span>
+          <span data-i18n="heroEyebrow">আপনার আইএসপি ব্যবসার স্মার্ট ডিজিটাল পার্টনার</span>
+        </div>
+
+        <h1 class="hero-title" data-i18n-html="heroTitle">
+          এক সফটওয়্যারেই <span class="grad-text">পুরো আইএসপি ব্যবসার</span> সহজ সমাধান
+        </h1>
+
+        <p class="hero-desc" data-i18n="heroDesc">
+          দৈনিক হিসাব-নিকাশ, বিকাশ পেমেন্ট, মাইক্রোটিক থেকে গ্রাহক সচল-বন্ধ, অটো ও বাল্ক এসএমএস, স্মার্ট ওএলটি মনিটরিং এবং রিসেলার ম্যানেজমেন্ট — সবকিছু একদম সহজ বাংলা ও ইংরেজি ড্যাশবোর্ডে।
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-lg btn-primary" data-i18n="heroDemo">📞 ফ্রি ডেমো নিন</a>
+          <button type="button" class="btn btn-lg btn-ghost" id="openVideoBtn" data-i18n="heroVideo">▶ ৪৭ সেকেন্ডের ভিডিও দেখুন</button>
+          <a href="#modules" class="btn btn-lg btn-outline" data-i18n="heroExplore">সব মডিউল দেখুন ↓</a>
+        </div>
+
+        <div class="hero-highlights">
+          <span><i>✓</i> <span data-i18n="hl1">দৈনিক হিসাব ও বিকাশ পেমেন্ট</span></span>
+          <span><i>✓</i> <span data-i18n="hl2">মাইক্রোটিক সচল-বন্ধ কন্ট্রোল</span></span>
+          <span><i>✓</i> <span data-i18n="hl3">অটো ও বাল্ক এসএমএস</span></span>
+          <span><i>✓</i> <span data-i18n="hl4">পাবলিক আইপি ছাড়াই ওএলটি মনিটরিং</span></span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="shot-frame">
+          <div class="shot-bar">
+            <span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span>
+            <span class="shot-url" data-i18n="bar01">ইজি আইএসপি — লাইভ ড্যাশবোর্ড</span>
+          </div>
+          <div class="shot-body js-zoom" data-img="assets/ui-dashboard-full.png" data-title-bn="০১. লাইভ ড্যাশবোর্ড ও ব্যবসার সারসংক্ষেপ" data-title-en="01. Live Executive Dashboard & Overview">
+            <img src="assets/ui-dashboard-full.png" alt="Live Dashboard Preview" />
+            <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIMPLE STATS STRIP ==================== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-val" data-i18n="stv1">২৩,৩৯৯+</div>
+          <div class="stat-lbl" data-i18n="st1">লাইভ গ্রাহক ম্যানেজমেন্ট স্কেল</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" data-i18n="stv2">১৩+</div>
+          <div class="stat-lbl" data-i18n="st2">সম্পূর্ণ আইএসপি মডিউল</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" data-i18n="stv3">০ পাবলিক আইপি</div>
+          <div class="stat-lbl" data-i18n="st3">বিল্ট-ইন ভিপিএন দিয়ে ওএলটি</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" data-i18n="stv4">বাংলা ও ইংরেজি</div>
+          <div class="stat-lbl" data-i18n="st4">সহজ ২-ভাষার ড্যাশবোর্ড</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== ALL 13 MODULES WITH CRISP 2K SCREENSHOTS ==================== -->
+  <section class="section" id="modules">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker" data-i18n="modKicker">📸 এইচডি স্ক্রিনশটসহ বিস্তারিত</div>
+        <h2 class="section-title" data-i18n-html="modTitle">আমাদের <span class="grad-text">সবগুলো মডিউল</span> এক নজরে</h2>
+        <p class="section-desc" data-i18n="modDesc">নিচে আমাদের প্রতিটি মডিউলের সহজ বর্ণনা ও স্পষ্ট এইচডি স্ক্রিনশট দেওয়া হলো। যেকোনো ছবিতে ক্লিক করলে একদম পরিষ্কারভাবে বড় করে দেখতে পারবেন।</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-pill active" data-filter="all" type="button" data-i18n="fAll">সব মডিউল (১৩)</button>
+        <button class="filter-pill" data-filter="billing" type="button" data-i18n="fBilling">দৈনিক হিসাব, বিলিং ও বিকাশ</button>
+        <button class="filter-pill" data-filter="mikrotik" type="button" data-i18n="fMikrotik">মাইক্রোটিক ও ওএলটি</button>
+        <button class="filter-pill" data-filter="sms" type="button" data-i18n="fSms">গ্রাহক ও এসএমএস</button>
+        <button class="filter-pill" data-filter="ops" type="button" data-i18n="fOps">রিসেলার, ডায়াগ্রাম ও স্টাফ</button>
+      </div>
+
+      <div class="modules-list">
+
+        <!-- MODULE 01 -->
+        <article class="module-row" data-cat="billing">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n01">০১</span>
+              <span class="mod-tag" data-i18n="m1Tag">ড্যাশবোর্ড ও আয়-ব্যয়</span>
+            </div>
+            <h3 data-i18n="m1Title">লাইভ ড্যাশবোর্ড ও ব্যবসার সারসংক্ষেপ</h3>
+            <p data-i18n="m1Desc">সফটওয়্যারে ঢুকলেই এক স্ক্রিনে আপনার পুরো আইএসপি-এর আজকের কালেকশন, মাসিক আয়, মোট বকেয়া, ছাড়, পাইকারি খরচ ও গ্রাহকের সংখ্যা দেখতে পাবেন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m1b1">মোট গ্রাহক, সক্রিয়, সাসপেন্ডেড ও নতুন গ্রাহকের লাইভ সংখ্যা</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m1b2">আজকের কালেকশন, এই মাসের আদায়, মোট বকেয়া ও ডিসকাউন্ট হিসাব</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m1b3">মাসিক আয় (টাকা) ও গ্রাহক বৃদ্ধির ভিজ্যুয়াল চার্ট</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar01">ইজি আইএসপি — লাইভ ড্যাশবোর্ড</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-dashboard-full.png" data-title-bn="০১. লাইভ ড্যাশবোর্ড ও ব্যবসার সারসংক্ষেপ" data-title-en="01. Live Executive Dashboard & Overview">
+                <img src="assets/ui-dashboard-full.png" alt="Live Dashboard" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 02 -->
+        <article class="module-row reverse" data-cat="billing">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n02">০২</span>
+              <span class="mod-tag pink" data-i18n="m2Tag">দৈনিক হিসাব-নিকাশ ও বিকাশ পেমেন্ট</span>
+            </div>
+            <h3 data-i18n="m2Title">দৈনিক হিসাব-নিকাশ, পেমেন্ট লগ ও বিকাশ ইন্টিগ্রেশন</h3>
+            <p data-i18n="m2Desc">প্রতিদিন ক্যাশ, বিকাশ, নগদ, রকেট বা রিসেলার ওয়ালেট দিয়ে কত টাকা আদায় হলো এবং কোন স্টাফ কত টাকা তুলল — তার নিখুঁত দৈনিক প্রতিবেদন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m2b1">বিকাশ, নগদ, রকেট, ব্যাংক ও ক্যাশ পেমেন্ট সাপোর্ট</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m2b2">বিকাশে বিল পরিশোধ করলেই ট্রানজ্যাকশন আইডি সেভ হয়ে লাইন অটো চালু</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m2b3">তারিখ ও কালেক্টর (স্টাফ) অনুযায়ী দৈনিক আদায় প্রতিবেদন ফিল্টার</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar02">ইজি আইএসপি — দৈনিক হিসাব ও বিকাশ পেমেন্ট</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-payments.png" data-title-bn="০২. দৈনিক হিসাব-নিকাশ, পেমেন্ট লগ ও বিকাশ ইন্টিগ্রেশন" data-title-en="02. Daily Collection Report & bKash Integration">
+                <img src="assets/ui-payments.png" alt="Daily Payments and bKash" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 03 -->
+        <article class="module-row" data-cat="billing">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n03">০৩</span>
+              <span class="mod-tag" data-i18n="m3Tag">বিল কালেকশন</span>
+            </div>
+            <h3 data-i18n="m3Title">সহজ বিল কালেকশন, পূর্ববর্তী বকেয়া ও অগ্রিম বিল</h3>
+            <p data-i18n="m3Desc">অপরিশোধিত, পূর্ববর্তী বকেয়া, সম্পূর্ণ পরিশোধিত ও অগ্রিম পরিশোধিত গ্রাহকদের আলাদা তালিকা — জোন ও তারিখ ফিল্টার করে ১-ক্লিকেই বিল আদায় করুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m3b1">প্রতিটি গ্রাহকের পূর্ববর্তী বকেয়া স্বয়ংক্রিয়ভাবে যোগ হয়ে দেখায়</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m3b2">১-ক্লিকে 'পরিশোধ' বাটন দিয়ে ক্যাশ বা বিকাশ বিল আদায় ও ছাড় প্রদান</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m3b3">১-ক্লিকে সবার জন্য মাসিক বাল্ক বিল তৈরি করার সুবিধা</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar03">ইজি আইএসপি — বিল কালেকশন</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-billing.png" data-title-bn="০৩. সহজ বিল কালেকশন ও পূর্ববর্তী বকেয়া" data-title-en="03. Smart Bill Collection & Previous Due">
+                <img src="assets/ui-billing.png" alt="Bill Collection" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 04 -->
+        <article class="module-row reverse" data-cat="billing">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n04">০৪</span>
+              <span class="mod-tag" data-i18n="m4Tag">ইনভয়েস ও রিসিট</span>
+            </div>
+            <h3 data-i18n="m4Title">অটো ইনভয়েস, পস থার্মাল প্রিন্ট ও পিডিএফ ডাউনলোড</h3>
+            <p data-i18n="m4Desc">প্রতিটি বিলের জন্য স্বয়ংক্রিয় ইনভয়েস তৈরি হয়। আজকের আদায়, এই মাসের আদায়, মোট বকেয়া ও মেয়াদোত্তীর্ণ ইনভয়েস আলাদাভাবে দেখুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m4b1">১-ক্লিকে থার্মাল পস প্রিন্টার রিসিট ও পিডিএফ ইনভয়েস ডাউনলোড</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m4b2">আংশিক বা পূর্ণ পেমেন্টের পরিষ্কার স্ট্যাটাস ও তারিখ রেকর্ড</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m4b3">মেয়াদোত্তীর্ণ ও অপরিশোধিত ইনভয়েস আলাদা করে ফিল্টার করার সুবিধা</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar04">ইজি আইএসপি — ইনভয়েস ও রিসিট</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-invoices.png" data-title-bn="০৪. অটো ইনভয়েস, পস রিসিট ও পিডিএফ" data-title-en="04. Auto Invoices, Thermal POS & PDF">
+                <img src="assets/ui-invoices.png" alt="Invoices Module" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 05 -->
+        <article class="module-row" data-cat="mikrotik">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n05">০৫</span>
+              <span class="mod-tag" data-i18n="m5Tag">মাইক্রোটিক কন্ট্রোল</span>
+            </div>
+            <h3 data-i18n="m5Title">মাইক্রোটিক থেকে সরাসরি গ্রাহক সচল-বন্ধ ও লাইভ ট্র্যাফিক</h3>
+            <p data-i18n="m5Desc">উইনবক্স ওপেন না করেই আমাদের ওয়েব প্যানেল থেকে সরাসরি আপনার মাইক্রোটিক রাউটারের সব গ্রাহক নিয়ন্ত্রণ করুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m5b1">১-ক্লিকে যেকোনো গ্রাহকের লাইন সচল বা বন্ধ করার সরাসরি কন্ট্রোল</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m5b2">গ্রাহকের লাইভ ডাউনলোড ও আপলোড স্পিড, আইপি, ম্যাক ও আপটাইম দেখুন</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m5b3">মেয়াদ শেষে অটো-সাসপেন্ড, এবং অনলাইন/অফলাইন/সাসপেন্ড ইউজার ফিল্টার</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar05">ইজি আইএসপি — মাইক্রোটিক ইউজার কন্ট্রোল</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-mikrotik-users.png" data-title-bn="০৫. মাইক্রোটিক গ্রাহক সচল-বন্ধ ও লাইভ ট্র্যাফিক" data-title-en="05. MikroTik Customer Enable/Disable & Live Traffic">
+                <img src="assets/ui-mikrotik-users.png" alt="MikroTik PPPoE Control" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 06 -->
+        <article class="module-row reverse" data-cat="sms">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n06">০৬</span>
+              <span class="mod-tag" data-i18n="m6Tag">গ্রাহক ব্যবস্থাপনা</span>
+            </div>
+            <h3 data-i18n="m6Title">সম্পূর্ণ গ্রাহক তালিকা ও ৩/৭ দিনে মেয়াদোত্তীর্ণ ট্র্যাকার</h3>
+            <p data-i18n="m6Desc">আপনার সব গ্রাহকের প্যাকেজ, বকেয়া, জোন, ওএলটি পোর্ট, রাউটার ও অনলাইন অবস্থা এক টেবিলেই দেখুন ও পরিচালনা করুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m6b1">আলাদা লিস্ট: সক্রিয়, আজকের নতুন, ৩ দিন ও ৭ দিনে মেয়াদোত্তীর্ণ, সাসপেন্ডেড</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m6b2">১-ক্লিকে বাল্ক এডিট, বাল্ক অ্যাকশন ও পুরনো এক্সেল থেকে গ্রাহক ইম্পোর্ট/এক্সপোর্ট</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m6b3">গ্রাহকদের নিজেদের বিল ও প্যাকেজ দেখার জন্য আলাদা গ্রাহক পোর্টাল</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar06">ইজি আইএসপি — গ্রাহক ব্যবস্থাপনা</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-customers.png" data-title-bn="০৬. গ্রাহক তালিকা ও ৩/৭ দিনে মেয়াদোত্তীর্ণ ট্র্যাকার" data-title-en="06. Customer Management & 3/7-Day Expiry Lists">
+                <img src="assets/ui-customers.png" alt="Customer Management" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 07 -->
+        <article class="module-row" data-cat="sms">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n07">০৭</span>
+              <span class="mod-tag" data-i18n="m7Tag">অটো এসএমএস সিস্টেম</span>
+            </div>
+            <h3 data-i18n="m7Title">অটোমেটেড এসএমএস পাঠানো ও ডেলিভারি রিপোর্ট</h3>
+            <p data-i18n="m7Desc">বিল তৈরি, পেমেন্ট কনফার্ম, বকেয়া রিমাইন্ডার, লাইন সাসপেন্ড বা রিকানেক্ট — প্রতিটি ইভেন্টে গ্রাহকের মোবাইলে অটোমেটিক এসএমএস চলে যাবে।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m7b1">প্রতিদিন সকাল ৯টায় বকেয়া ও মেয়াদ শেষ হওয়ার অটো রিমাইন্ডার এসএমএস</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m7b2">নতুন সংযোগ ওয়েলকাম, পেমেন্ট রিসিট, সাসপেন্ড ও রিকানেক্ট অটো এসএমএস</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m7b3">আজ ও এই মাসে কত এসএমএস গেছে তার লাইভ ডেলিভারি লগ ও গেটওয়ে ব্যালেন্স</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar07">ইজি আইএসপি — অটো এসএমএস রিপোর্ট</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-sms.png" data-title-bn="০৭. অটোমেটেড এসএমএস ও ডেলিভারি রিপোর্ট" data-title-en="07. Automated SMS & Delivery Analytics">
+                <img src="assets/ui-sms.png" alt="Auto SMS Analytics" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 08 -->
+        <article class="module-row reverse" data-cat="sms">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n08">০৮</span>
+              <span class="mod-tag" data-i18n="m8Tag">বাল্ক এসএমএস ক্যাম্পেইন</span>
+            </div>
+            <h3 data-i18n="m8Title">স্মার্ট বাল্ক এসএমএস ও পন আউটেজ নোটিশ</h3>
+            <p data-i18n="m8Desc">নির্দিষ্ট জোন, রাউটার, প্যাকেজ বা বকেয়া থাকা হাজারো গ্রাহককে এক ক্লিকেই কাস্টম নোটিশ, ঈদ শুভেচ্ছা বা লাইন মেইনটেন্যান্স এসএমএস পাঠান।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m8b1">প্রতিটি গ্রাহকের নাম, বকেয়া ও মেয়াদের তারিখসহ ব্যক্তিগতকৃত এসএমএস</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m8b2">রাউটার, জোন, প্যাকেজ ও ন্যূনতম বকেয়া দিয়ে প্রাপক ফিল্টার ও লাইভ প্রিভিউ</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m8b3">অবৈধ ও ডুপ্লিকেট নম্বর অটো বাদ দিয়ে এসএমএস খরচ কমায় + পন আউটেজ নোটিশ</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar08">ইজি আইএসপি — বাল্ক এসএমএস ক্যাম্পেইন</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-bulk-sms.png" data-title-bn="০৮. স্মার্ট বাল্ক এসএমএস ও পন আউটেজ নোটিশ" data-title-en="08. Dynamic Bulk SMS & PON Outage Broadcasts">
+                <img src="assets/ui-bulk-sms.png" alt="Bulk SMS Composer" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 09 -->
+        <article class="module-row" data-cat="mikrotik">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n09">০৯</span>
+              <span class="mod-tag" data-i18n="m9Tag">স্মার্ট ওএলটি ও বিল্ট-ইন ভিপিএন</span>
+            </div>
+            <h3 data-i18n="m9Title">পাবলিক আইপি ছাড়াই স্মার্ট ওএলটি রিয়েল-টাইম এনওসি</h3>
+            <p data-i18n="m9Desc">বিল্ট-ইন ওয়্যারগার্ড ভিপিএন দিয়ে কোনো পাবলিক আইপি ছাড়াই আপনার সব ওএলটি ক্লাউড থেকে লাইভ মনিটর করুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m9b1">গ্রাহকের বাসায় বিদ্যুৎ গেছে নাকি রাস্তায় ফাইবার ছিঁড়েছে — জানুন সেকেন্ডেই</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m9b2">মোট অনলাইন, অফলাইন, দুর্বল সিগন্যাল ও আনবাউন্ড ওএনইউ-এর লাইভ কাউন্টার</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m9b3">প্রতিটি ওএলটি-এর সিপিইউ, তাপমাত্রা ও আপটাইম মনিটরিং</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar09">ইজি আইএসপি — স্মার্ট ওএলটি এনওসি</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-olt-noc.png" data-title-bn="০৯. স্মার্ট ওএলটি রিয়েল-টাইম এনওসি ও ভিপিএন" data-title-en="09. Zero-Public-IP SmartOLT Real-Time NOC">
+                <img src="assets/ui-olt-noc.png" alt="SmartOLT NOC" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 10 -->
+        <article class="module-row reverse" data-cat="mikrotik">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n10">১০</span>
+              <span class="mod-tag" data-i18n="m10Tag">পন সিগন্যাল ও ওএনইউ বাইন্ড</span>
+            </div>
+            <h3 data-i18n="m10Title">পন অপটিক্যাল স্প্লিটার ও ১-ক্লিক গ্রাহক-ওএনইউ অটো-বাইন্ড</h3>
+            <p data-i18n="m10Desc">প্রতিটি পন পোর্টের গড় অপটিক্যাল সিগন্যাল ও দুর্বল লাইন দেখুন, এবং ১-ক্লিকে প্রতিটি ওএনইউ-কে তার বিলিং গ্রাহকের সাথে যুক্ত করুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m10b1">পোর্ট অনুযায়ী অনলাইন ও অফলাইন ওএনইউ এবং গড় অপটিক্যাল পাওয়ার</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m10b2">ক্রিটিক্যাল দুর্বল অপটিক্যাল সিগন্যাল আলাদা করে চিহ্নিতকরণ</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m10b3">১-ক্লিকে ওএনইউ অটো-বাইন্ড ও ঘোস্ট ওএনইউ পরিষ্কার করার সুবিধা</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar10">ইজি আইএসপি — পন অপটিক্যাল সিগন্যাল</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-pon-ports.png" data-title-bn="১০. পন অপটিক্যাল স্প্লিটার ও ওএনইউ অটো-বাইন্ড" data-title-en="10. PON Optical Splitters & ONU Auto-Bind">
+                <img src="assets/ui-pon-ports.png" alt="PON Optical Splitters" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 11 -->
+        <article class="module-row" data-cat="ops">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n11">১১</span>
+              <span class="mod-tag" data-i18n="m11Tag">রিসেলার ও ওয়ালেট</span>
+            </div>
+            <h3 data-i18n="m11Title">রিসেলার ম্যানেজমেন্ট ও প্রিপেইড ওয়ালেট লেজার</h3>
+            <p data-i18n="m11Desc">সকল রিসেলারের আলাদা লগইন, নিজস্ব গ্রাহক তালিকা, ওয়ালেট ব্যালেন্স এবং মাসিক ও সর্বমোট রিচার্জের স্বচ্ছ হিসাব রাখুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m11b1">মোট রিসেলার, সক্রিয় রিসেলার, ওয়ালেট ব্যালেন্স ও মাসিক রিচার্জ সারসংক্ষেপ</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m11b2">১-ক্লিকে রিসেলার ওয়ালেট রিচার্জ ও কাস্টম পাইকারি প্যাকেজ রেট</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m11b3">প্রতিটি রিসেলারের জন্য আলাদা এসএমএস ওয়ালেট ও অটোমেটিক লেনদেন লগ</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar11">ইজি আইএসপি — রিসেলার ও ওয়ালেট</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-resellers.png" data-title-bn="১১. রিসেলার ম্যানেজমেন্ট ও প্রিপেইড ওয়ালেট" data-title-en="11. Reseller Management & Prepaid Wallets">
+                <img src="assets/ui-resellers.png" alt="Reseller Management" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 12 -->
+        <article class="module-row reverse" data-cat="ops">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n12">১২</span>
+              <span class="mod-tag" data-i18n="m12Tag">নেটওয়ার্ক ডায়াগ্রাম</span>
+            </div>
+            <h3 data-i18n="m12Title">ভিজ্যুয়াল নেটওয়ার্ক টপোলজি ডায়াগ্রাম, জোন ও ওডিবি</h3>
+            <p data-i18n="m12Desc">আপস্ট্রিম ইন্টারনেট থেকে ট্রান্সমিশন লিংক, কোর রাউটার, জোন রাউটার, ওএলটি ও ওডিবি স্প্লিটার পর্যন্ত আপনার পুরো নেটওয়ার্কের পরিষ্কার ভিজ্যুয়াল ম্যাপ।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m12b1">আপস্ট্রিম → কোর রাউটার → জোন রাউটার → ওএলটি → গ্রাহক ভিজ্যুয়াল ডায়াগ্রাম</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m12b2">জোন, সাব-জোন ও ওডিবি বক্স অনুযায়ী ফাইবার নেটওয়ার্ক সাজিয়ে রাখার সুবিধা</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m12b3">নতুন টেকনিশিয়ানও সহজেই পুরো নেটওয়ার্কের সংযোগ বুঝতে পারবে</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar12">ইজি আইএসপি — নেটওয়ার্ক ডায়াগ্রাম</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-diagram.png" data-title-bn="১২. ভিজ্যুয়াল নেটওয়ার্ক টপোলজি ডায়াগ্রাম" data-title-en="12. Visual Network Topology Diagram">
+                <img src="assets/ui-diagram.png" alt="Network Topology Diagram" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MODULE 13 -->
+        <article class="module-row" data-cat="ops">
+          <div class="module-info">
+            <div class="mod-top-badge">
+              <span class="mod-num" data-i18n="n13">১৩</span>
+              <span class="mod-tag" data-i18n="m13Tag">স্টাফ, পারমিশন ও স্টক</span>
+            </div>
+            <h3 data-i18n="m13Title">স্টাফ পারমিশন, ক্রয়-বিক্রয় ও ইনভেন্টরি স্টক</h3>
+            <p data-i18n="m13Desc">ম্যানেজার, বিল কালেক্টর ও টেকনিশিয়ানদের জন্য আলাদা রাউটার ও সূক্ষ্ম পারমিশন নির্ধারণ করুন — সাথে ওএনইউ, রাউটার ও ফাইবার স্টকের হিসাব রাখুন।</p>
+            <ul class="mod-points">
+              <li><span class="mod-check">✓</span><span data-i18n="m13b1">প্রতিটি স্টাফের জন্য নির্দিষ্ট রাউটার ও ৩৫টির বেশি সূক্ষ্ম অনুমতি নিয়ন্ত্রণ</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m13b2">কোন স্টাফ কখন কী পরিবর্তন করেছে তার সম্পূর্ণ অ্যাক্টিভিটি অডিট লগ</span></li>
+              <li><span class="mod-check">✓</span><span data-i18n="m13b3">রাউটার, ওএনইউ ও ফাইবার ক্যাবলের ক্রয়, বিক্রয় ও স্টক ম্যানেজমেন্ট</span></li>
+            </ul>
+          </div>
+          <div class="module-shot">
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="b-dot r"></span><span class="b-dot y"></span><span class="b-dot g"></span><span class="shot-url" data-i18n="bar13">ইজি আইএসপি — স্টাফ পারমিশন ও স্টক</span></div>
+              <div class="shot-body js-zoom" data-img="assets/ui-employees.png" data-title-bn="১৩. স্টাফ পারমিশন, ক্রয়-বিক্রয় ও স্টক" data-title-en="13. Staff RBAC Permissions & Stock Inventory">
+                <img src="assets/ui-employees.png" alt="Staff RBAC Permissions" loading="lazy" />
+                <span class="shot-zoom-pill" data-i18n="zoomPill">🔍 বড় করে দেখুন</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEADERSHIP: FOUNDER & CO-FOUNDER ==================== -->
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker" data-i18n="teamKicker">👥 আমাদের নেতৃত্ব</div>
+        <h2 class="section-title" data-i18n-html="teamTitle">ইজি আইএসপি সলিউশনের <span class="grad-text">পেছনের মানুষগুলো</span></h2>
+        <p class="section-desc" data-i18n="teamDesc">বাংলাদেশের আইএসপি উদ্যোক্তাদের ব্যবসা সহজ, আধুনিক ও শতভাগ অটোমেটেড করতে আমরা নিরলসভাবে কাজ করে যাচ্ছি।</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Founder & CEO: Md. Zobayer Prodhan -->
+        <article class="leader-card">
+          <div class="leader-photo-wrap">
+            <div class="leader-photo">
+              <img src="assets/founder-zobayer.jpg" alt="Md. Zobayer Prodhan — Founder & CEO" />
+            </div>
+          </div>
+          <div class="leader-info">
+            <div class="leader-badge">✦ <span data-i18n="founderBadge">প্রতিষ্ঠাতা ও সিইও</span></div>
+            <h3 class="leader-name" data-i18n="founderName">মো. জোবায়ের প্রধান</h3>
+            <div class="leader-role" data-i18n="founderRole">প্রতিষ্ঠাতা ও সিইও — ইজি আইএসপি সলিউশন</div>
+            <p class="leader-bio" data-i18n="founderBio">
+              বাংলাদেশের প্রতিটি আইএসপি উদ্যোক্তা যেন বিলিং, বকেয়া আদায় আর নেটওয়ার্ক ঝামেলা থেকে মুক্ত হয়ে সহজে ব্যবসা বড় করতে পারেন — সেই ভিশন নিয়েই ইজি আইএসপি সলিউশনের পথচলা।
+            </p>
+          </div>
+        </article>
+
+        <!-- Co-Founder & Technology Mastermind: Md. Julker Nain -->
+        <article class="leader-card tech">
+          <div class="leader-photo-wrap">
+            <div class="leader-photo">
+              <img src="assets/cofounder-tech.jpg" alt="Md. Julker Nain — Co-Founder & Technology Mastermind" />
+            </div>
+          </div>
+          <div class="leader-info">
+            <div class="leader-badge">⚡ <span data-i18n="cofounderBadge">সহ-প্রতিষ্ঠাতা ও প্রযুক্তি মাস্টারমাইন্ড</span></div>
+            <h3 class="leader-name" data-i18n="cofounderName">মো. জুলকার নাইন</h3>
+            <div class="leader-role" data-i18n="cofounderRole">সহ-প্রতিষ্ঠাতা ও প্রযুক্তি মাস্টারমাইন্ড</div>
+            <p class="leader-bio" data-i18n="cofounderBio">
+              ক্লাউড বিলিং ইঞ্জিন, মাইক্রোটিক রিয়েল-টাইম অটোমেশন, বিল্ট-ইন ওয়্যারগার্ড ভিপিএন ও স্মার্ট ওএলটি টেলিমেট্রি আর্কিটেকচারের মূল কারিগর — যিনি প্রযুক্তিগতভাবে পুরো প্ল্যাটফর্মটিকে দ্রুত ও নির্ভরযোগ্য করে তুলেছেন।
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIMPLE CONTACT & FREE DEMO ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-kicker" data-i18n="contactKicker">🎁 ফ্রি লাইভ ডেমো</div>
+        <h2 class="section-title" data-i18n-html="contactTitle">আজই <span class="grad-text">ফ্রি ডেমো নিন</span></h2>
+        <p class="section-desc" data-i18n="contactDesc">আগে নিজে চালিয়ে দেখুন, তারপর সিদ্ধান্ত নিন। নিচের ফর্ম পূরণ করলে সরাসরি আমাদের হোয়াটসঅ্যাপে মেসেজ চলে যাবে।</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 data-i18n="formTitle">৩০ সেকেন্ডে ডেমো রিকোয়েস্ট</h3>
+          <p data-i18n="formSub">আপনার আইএসপি-এর তথ্য দিন — আমাদের টিম সাথে সাথেই ডেমো অ্যাক্সেস দিয়ে দেবে।</p>
+          <form id="demoForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="ispName" data-i18n="lblIsp">আইএসপি / কোম্পানির নাম</label>
+                <input id="ispName" type="text" class="form-input" placeholder="যেমন: ডিজিটাল ফাইবার নেট" required />
+              </div>
+              <div class="form-group">
+                <label for="phoneNum" data-i18n="lblPhone">মোবাইল / হোয়াটসঅ্যাপ নম্বর</label>
+                <input id="phoneNum" type="tel" class="form-input" placeholder="০১XXXXXXXXX" required />
+              </div>
+              <div class="form-group full">
+                <label for="custCount" data-i18n="lblCount">মোট গ্রাহক সংখ্যা</label>
+                <select id="custCount" class="form-select">
+                  <option value="Under 500" data-i18n="opt1">৫০০-এর কম</option>
+                  <option value="500 - 2,000" selected data-i18n="opt2">৫০০ – ২,০০০ গ্রাহক</option>
+                  <option value="2,000 - 10,000" data-i18n="opt3">২,০০০ – ১০,০০০ গ্রাহক</option>
+                  <option value="10,000+" data-i18n="opt4">১০,০০০+ গ্রাহক</option>
+                </select>
+              </div>
+              <div class="form-group full" style="margin-top:4px;">
+                <button type="submit" class="btn btn-lg btn-primary" style="width:100%;" data-i18n="btnWa">💬 হোয়াটসঅ্যাপে ফ্রি ডেমো রিকোয়েস্ট পাঠান</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="direct-box">
+          <div>
+            <h3 style="font-size:23px; font-weight:800; margin-bottom:8px;" data-i18n="directTitle">সরাসরি যোগাযোগ করুন</h3>
+            <p style="font-size:15px; color:var(--text-2); margin-bottom:18px;" data-i18n="directSub">যেকোনো প্রশ্ন, ডেমো বা সেটআপ সহায়তার জন্য সরাসরি কল, হোয়াটসঅ্যাপ বা ইমেইল করুন।</p>
+
+            <div class="direct-list">
+              <a href="https://wa.me/8801844291892?text=Assalamu%20Alaikum%2C%20I%20want%20a%20live%20demo%20of%20Easy%20ISP%20Solution." target="_blank" rel="noopener" class="direct-item">
+                <span class="direct-ico">💬</span>
+                <div>
+                  <div class="direct-lbl" data-i18n="dirWa">বিজনেস হোয়াটসঅ্যাপ (লাইভ ডেমো)</div>
+                  <div class="direct-val" data-i18n="dirPhoneVal">+৮৮০ ১৮৪৪-২৯১৮৯২</div>
+                </div>
+              </a>
+              <a href="tel:+8801844291892" class="direct-item">
+                <span class="direct-ico">📞</span>
+                <div>
+                  <div class="direct-lbl" data-i18n="dirCall">সরাসরি ফোন কল</div>
+                  <div class="direct-val" data-i18n="dirPhoneVal">+৮৮০ ১৮৪৪-২৯১৮৯২</div>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/share/1BitFmsKwS/" target="_blank" rel="noopener" class="direct-item">
+                <span class="direct-ico">📘</span>
+                <div>
+                  <div class="direct-lbl" data-i18n="dirFb">অফিশিয়াল ফেসবুক পেজ</div>
+                  <div class="direct-val">Easy Isp Solution ↗</div>
+                </div>
+              </a>
+              <a href="mailto:easyispsolution@gmail.com" class="direct-item">
+                <span class="direct-ico">✉️</span>
+                <div>
+                  <div class="direct-lbl" data-i18n="dirEmail">ইমেইল</div>
+                  <div class="direct-val">easyispsolution@gmail.com</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div style="font-size:13.5px; color:var(--text-muted);" data-i18n-html="dirLocation">
+            📍 ঢাকা, বাংলাদেশ &nbsp;•&nbsp; ওয়েবসাইট: <strong>easyispsolution.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CLEAN FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div data-i18n-html="footerCopy">&copy; <span id="yearNow">২০২৬</span> <strong>ইজি আইএসপি সলিউশন</strong> — সর্বস্বত্ব সংরক্ষিত।</div>
+      <div class="footer-links">
+        <a href="#modules" data-i18n="navModules">আমাদের মডিউলসমূহ</a>
+        <a href="#team" data-i18n="navTeam">ফাউন্ডার ও টিম</a>
+        <a href="https://www.facebook.com/share/1BitFmsKwS/" target="_blank" rel="noopener" data-i18n="footerFb">ফেসবুক পেজ</a>
+        <a href="https://wa.me/8801844291892?text=Assalamu%20Alaikum%2C%20I%20want%20a%20live%20demo%20of%20Easy%20ISP%20Solution." target="_blank" rel="noopener" data-i18n="dirPhoneVal">+৮৮০ ১৮৪৪-২৯১৮৯২</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/8801844291892?text=Assalamu%20Alaikum%2C%20I%20want%20a%20free%20demo%20of%20Easy%20ISP%20Solution." target="_blank" rel="noopener" class="wa-fab" aria-label="Chat on WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <span data-i18n="waFab">হোয়াটসঅ্যাপ ডেমো</span>
+  </a>
+
+  <!-- High-Res Screenshot Zoom Lightbox -->
+  <div class="modal-backdrop" id="imgModal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-head">
+        <span id="imgModalTitle">স্ক্রিনশট প্রিভিউ</span>
+        <button class="modal-close" id="imgModalClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-img-scroll">
+        <img id="imgModalSrc" src="assets/ui-dashboard-full.png" alt="HD Screenshot Preview" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Demo Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true">
+    <div class="modal-box video-box">
+      <div class="modal-head">
+        <span data-i18n="vidTitle">🎬 ইজি আইএসপি সলিউশন — ৪৭ সেকেন্ডের ডেমো ভিডিও</span>
+        <button class="modal-close" id="videoModalClose" type="button" aria-label="Close">&times;</button>
+      </div>
+      <video id="promoVideo" controls playsinline preload="none" poster="assets/ui-dashboard-full.png">
+        <source src="assets/promo-demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
